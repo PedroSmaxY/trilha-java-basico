@@ -5,6 +5,7 @@ classDiagram
         <<interface>>
         +ligar(String numero)
         +atender()
+        +desligarLigacao()
         +iniciarCorreioVoz()
     }
 
@@ -29,6 +30,7 @@ classDiagram
         +selecionarMusica(String musica)
         +ligar(String numero)
         +atender()
+        +desligarLigacao()
         +iniciarCorreioVoz()
         +exibirPagina(String url)
         +adicionarNovaAba()
