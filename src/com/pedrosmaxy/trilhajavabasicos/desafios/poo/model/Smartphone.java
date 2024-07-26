@@ -1,10 +1,10 @@
-package desafios.poo.src;
+package com.pedrosmaxy.trilhajavabasicos.desafios.poo.model;
 
-import desafios.poo.interfaces.AparelhoTelefonico;
-import desafios.poo.interfaces.NavegadorInternet;
-import desafios.poo.interfaces.ReprodutorMusical;
+import com.pedrosmaxy.trilhajavabasicos.desafios.poo.interfaces.AparelhoTelefonico;
+import com.pedrosmaxy.trilhajavabasicos.desafios.poo.interfaces.NavegadorInternet;
+import com.pedrosmaxy.trilhajavabasicos.desafios.poo.interfaces.ReprodutorMusical;
 
-public abstract class Smartphone implements ReprodutorMusical, AparelhoTelefonico, NavegadorInternet {
+public abstract class Smartphone implements AparelhoTelefonico, NavegadorInternet, ReprodutorMusical {
 
     @Override
     public void tocar() {
@@ -49,5 +49,10 @@ public abstract class Smartphone implements ReprodutorMusical, AparelhoTelefonic
     @Override
     public void atualizarPagina() {
         System.out.println("Atualizando página . . .");
+    }
+
+    @Override
+    public void desligarLigacao() {
+        System.out.println("Desligando ligação. . .");
     }
 }

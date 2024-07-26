@@ -1,4 +1,4 @@
-package desafios.poo.interfaces;
+package com.pedrosmaxy.trilhajavabasicos.desafios.poo.interfaces;
 
 public interface NavegadorInternet {
     public void exibirPagina(String url);
